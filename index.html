@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Magic Notes</a>
+            <a class="navbar-brand" href="#" id="a1">Magic Notes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,19 +23,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#" id="a2">Home</a>
                     </li>
 
                 </ul>
                 <form class="d-flex">
-                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="Txt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="a3">Search</button>
                 </form>
             </div>
         </div>
     </nav>
     <div class="container my-3">
         <h1>Welcome To Magic Notes </h1>
+        <h2 style="color: rgb(45, 203, 198);" id="Owner" onclick=Owner()>Made By(Click Here To reveal)</h2>
         <div class="card" style="width: 18rem;">
           
 
@@ -50,7 +51,8 @@
                 <div class="mb-3">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
                 </div>
-                <button class="btn btn-primary" id="addBtn">Add Note</button>
+                <button class="btn btn-primary" id="addBtn"
+                >Add Note</button>
             </div>
         </div>
         <hr>
@@ -70,6 +72,18 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="js/app.js"> </script>
+    <style>
+        #addBtn:hover {
+            background-color:  rgb(45, 203, 198);
+        }
+        #a1:hover, #a2:hover{
+           color:  rgb(45, 203, 198);
+        }
+        #a3:hover{
+            background-color:  rgb(45, 203, 198);   
+        }
+    </style>
+
 </body>
 
 </html>

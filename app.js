@@ -42,8 +42,10 @@ function showNotes(){
             ${element.text}
             </p>
             <button id="${index}"
-            onclick="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>
+            onclick="deleteNote(this.id)" class="btn btn-primary" id="a4" style="color:white;" onMouseOver="this.style.backgroundColor='rgb(45, 203, 198)'"
+            onMouseOut="this.style.backgroundColor='blue'">Delete Note</button>
         </div>
+
     </div>
         `;    
     });
@@ -69,6 +71,10 @@ function deleteNote(index){
     notesObj.splice(index,1);
     localStorage.setItem("notes",JSON.stringify(notesObj));
     showNotes();
+}
+
+function Owner(){
+    document.getElementById("Owner").innerHTML=`<h2>Made By Dhruv </h2>`
 }
 
 let search=document.getElementById('searchTxt');
